@@ -18,7 +18,7 @@ We put together Rails + Stripe to build the first coffee roaster university.
 
 **[localhost:3000]**
 
-You will be able to start taking payments from the minute the API keys have been inserted intot he secrets.yml file.
+You will be able to start taking payments from the minute the API keys have been inserted into the "secrets.yml" file.
 
 Clone it, change it, use it, profit.
 
