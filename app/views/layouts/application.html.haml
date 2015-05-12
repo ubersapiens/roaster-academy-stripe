@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title StripeBasics
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    %link{:href => "http://fonts.googleapis.com/css?family=Crete+Round:400,400italic|Open+Sans:400,700,800", :rel => "stylesheet"}/
+    = csrf_meta_tags
+  %body.curriculum-page
+    .wrapper
+      %header#header
+        .top-bg
+          .wrapper-inside.clearfix
+            %h1#logo
+              %a{:href => "/"} Roaster Academy
+        .wrapper-inside.clearfix
+          .top-small
+      %section.content.clearfix
+        %section.curriculum
+          = render partial: "courses/index"
+          = yield
